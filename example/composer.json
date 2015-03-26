@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+        "peridot-php/peridot": "~1.0",
+        "peridot-php/leo": "~1.0",
+        "phpunit/php-code-coverage": "~2.0"
+    }
+}

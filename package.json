@@ -1,0 +1,51 @@
+{
+  "name": "gulp-peridot",
+  "version": "0.1.0",
+  "description": "Peridot PHP Test framework runner for gulp",
+  "main": "./index.js",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "mocha",
+    "hint": "jshint index.js test && true || true",
+    "jcs": "jscs index.js test && true || true",
+    "pcs": "phpcs --colors -s -n --standard=ruleset.xml example peridot-easy && true || true",
+    "example": "cd example && gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ktty1220/gulp-peridot.git"
+  },
+  "keywords": [
+    "gulpplugin",
+    "gulp",
+    "peridot"
+  ],
+  "author": {
+    "name": "ktty1220",
+    "email": "ktty1220@gmail.com"
+  },
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "dependencies": {
+    "gulp-util": "^3.0.4",
+    "map-stream": "0.0.5",
+    "which": "^1.0.9"
+  },
+  "devDependencies": {
+    "event-stream": "*",
+    "intelli-espower-loader": "*",
+    "mkdirp": "*",
+    "mocha": "*",
+    "mocha-clean": "*",
+    "nopt": "*",
+    "power-assert": "*",
+    "rmdir": "*",
+    "strip-ansi": "*",
+    "gulp": "*"
+  },
+  "directories": {
+    "test": "test/"
+  }
+}
